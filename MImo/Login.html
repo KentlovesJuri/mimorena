@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mimo Log In</title>
+    <link rel="stylesheet" href="Log.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <img src="logo ni mimo.png" alt="Mimo Logo" class="top-left-logo">
+    <h2 class="left-title"><strong style="font-size: larger;">C</strong>REATE AN <br><b style="margin: 60px;">ACCOUNT</b></h2>
+    <div class="log-container">
+        <form action="Home.html">
+
+        <!------------EMAIL----------------->
+        <h1>What's your email?</h1>
+
+        <div>
+            <input type="email" id="email" name="email" required
+            placeholder="Email"
+            class="input-field">
+        </div>
+
+        <!------------BIRTHDAY----------------->
+
+
+        <div class="date-input-group">
+        <div class="flex-1">
+            <label class="date-input-label">Day</label>
+            <input type="number" id="dob_day" name="dob_day" required
+            placeholder="DD" min="1" max="31"
+            class="date-input">
+        </div>
+        <div class="flex-1">
+            <label class="date-input-label">Month</label>
+            <input type="number" id="dob_month" name="dob_month" required
+            placeholder="Month" min="1" max="12"
+            class="date-input">
+        </div>
+        <div class="flex-1">
+            <label class="date-input-label">Year</label>
+            <input type="number" id="dob_year" name="dob_year" required
+            placeholder="Year" min="1900" max="2025"
+            class="date-input">
+        </div>
+    </div>
+
+     <!------------USERNAME----------------->
+
+    <div>
+        <input type="text" id="username" name="username" required
+        placeholder="Username"
+        class="input-field">
+    </div>
+
+     <!------------PASSWORD----------------->
+    
+    <div>
+        <input type="password" id="password" name="password" required
+        placeholder="Password"
+        class="input-field">
+    </div>
+
+     <!------------CONFIRM PASSWORD----------------->
+
+    <div>
+        <input type="password" id="confirm_password" name="confirm_password" required
+        placeholder="Confirm Password"
+        class="input-field">
+    </div>
+
+     <!------------CHECKBOX----------------->
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="marketing_opt_in" name="marketing_opt_in" class="custom-checkbox">
+        <label for="marketing_opt_in" class="text-white text-xs">
+            Yes! I would like to share my email address with third-party partners (e.g. Google, Facebook) to enable personalized marketing and advertising.
+        </label>
+    </div>
+
+     <!------------BUTTON----------------->
+
+    <div class="button-container">
+    <button type="submit" class="submit-button">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+             <path fill-rule="evenodd" d="M3.75 12a.75.75 0 0 1 .75-.75h14.586l-2.293-2.293a.75.75 0 1 1 1.06-1.06l3.5 3.5a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 1 1-1.06-1.06l2.293-2.293H4.5a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+            </svg>
+        </button>
+    </div>
+
+        </form>
+    </div>
+
+    
+
+</body>
+</html>

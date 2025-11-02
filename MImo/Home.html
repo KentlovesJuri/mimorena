@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head><title></title></head>
+    <body>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mimo Quiz</title>
+  <link rel="stylesheet" href="stylemimo.css"/>
+</head>
+<body>
+  <div class="grid-background"></div>
+  <header>
+    <div class="logo"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" /></div>
+    <nav>
+      <a href="Arena dawg">Arena</a>
+      <a href="Leaderboards of doom">Leaderboards</a>
+      <a href="about me the legendary gooner dawg">About Us</a>
+    </nav>
+    <div class="rank-box">RANK: Rookie<br><span>XP:999,9999</span></div>
+  <button id="login-btn" class="login-toggle">Log In</button>
+
+<!-- Login Panel (hidden by default) -->
+<div class="login-panel hidden" id="login-panel">
+  <input type="email" placeholder="Email" />
+  <input type="password" placeholder="Password" />
+  <div class="buttons">
+    <button class="enter">Enter</button>
+    <button class="register">Register</button>
+  </div>
+  <button class="close-login">Close</button>
+</div>
+  </header>
+
+  <main>
+    <div class="title">
+       <h1 class="game-title">
+    <span class="mimo">Mimo</span><br>
+    <span class="quiz">Quiz</span>
+    
+    </h1>
+     
+    </div>
+    <a href="upload.html"> <button class="play-button" >PLAY</button> </a>
+  </main>
+ <script>
+const loginBtn = document.getElementById('login-btn');
+const loginPanel = document.getElementById('login-panel');
+const closeBtn = document.querySelector('.close-login');
+
+// Toggle login panel visibility
+loginBtn.addEventListener('click', () => {
+  // if panel is visible -> hide it
+  if (loginPanel.classList.contains('active')) {
+    loginPanel.classList.remove('active');
+    setTimeout(() => loginPanel.classList.add('hidden'), 400);
+  } 
+  // if panel is hidden -> show it
+  else {
+    loginPanel.classList.remove('hidden');
+    setTimeout(() => loginPanel.classList.add('active'), 10);
+  }
+});
+
+// Also let the Close button hide the panel
+closeBtn.addEventListener('click', () => {
+  loginPanel.classList.remove('active');
+  setTimeout(() => loginPanel.classList.add('hidden'), 400);
+});
+</script>
+
+
+</body>
+</html>

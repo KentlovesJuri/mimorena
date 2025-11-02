@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Module</title>
+  <link rel="stylesheet" href="Arena.css" />
+</head>
+<body>
+  <div class="upload-container" style="text-align:center; margin-top:100px;">
+    <h2>📘 Upload your module to start</h2>
+    <input type="file" id="fileInput" accept=".txt,.pdf,.docx" /><br><br>
+    <button id="processBtn">Generate Questions</button>
+  </div>
+
+  <!-- Libraries for PDF & DOCX parsing -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+<script src="upload.js"></script>
+
+</body>
+</html>

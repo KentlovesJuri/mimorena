@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shape Quiz Game</title>
+  <link rel="stylesheet" href="Arena.css" />
+</head>
+<body>
+  <!-- Floating Background Effects -->
+  <div class="floating1"></div>
+  <div class="floating2"></div>
+  <div class="floating3"></div>
+  <div class="floating4"></div>
+  <div class="floating5"></div>
+  <div class="floating6"></div>
+  <div class="floating7"></div>
+
+  <!-- Ready Screen -->
+  <div class="ready-screen" id="ready-screen">
+    <h2>Get Ready!</h2>
+    <div class="ready-buttons">
+      <button id="ready-p1">Player 1 Ready</button>
+      <button id="ready-p2">Player 2 Ready</button>
+    </div>
+  </div>
+
+  <!-- Game Container -->
+  <div class="game-container">
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="player">
+        <span class="eye">👁️</span>
+        <span class="score">50</span>
+        <span class="name">Player 1</span>
+      </div>
+      <div class="logo">❤️</div>
+      <div class="player">
+        <span class="eye">👁️</span>
+        <span class="score">50</span>
+        <span class="name">Player 2</span>
+      </div>
+    </div>
+
+    <!-- Question -->
+    <div class="question">
+      <p id="question-text">Get ready...</p>
+    </div>
+
+    <!-- Dynamic Options -->
+    <div class="options">
+      <button class="option" data-index="0">A</button>
+      <button class="option" data-index="1">B</button>
+      <button class="option" data-index="2">C</button>
+      <button class="option" data-index="3">D</button>
+    </div>
+
+    <!-- Timer -->
+    <div class="timer">
+      <div class="timer-bar" id="timer-bar"></div>
+    </div>
+  </div>
+<!-- GAME OVER SCREEN -->
+<div id="game-over" class="game-over hidden">
+  <h1 id="game-over-title">Game Over</h1>
+  <p id="game-over-summary"></p>
+  <button id="play-again">🔁 Play Again</button>
+  <button id="back-upload">⬅️ Back to Upload</button>
+  
+  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
